@@ -5,6 +5,34 @@
 		<title>
 			this is tuesday
 		</title>
+		<style>
+			p{
+				color: aqua;
+			}
+			li{
+				/* 去黑点 */
+				list-style: none;
+				/* 设置宽高 */
+				width: 110px;
+				height: 40px;
+				/* 文字水平居中 */
+				text-align: center;
+				/* 文字垂直 和宽高度相同居中*/
+				line-height: 40px;
+				/* 圆矩形 */
+				border-radius: 3px;
+				/* 动画效果 */
+				transition: 0.5s linear;
+			}
+			/* 伪类  hover*/
+			li:hover{
+				color: white;
+				background-color: #ff5b36;
+				/* 鼠标形状 */
+				cursor: pointer;
+				
+			}
+		</style>
 	</head>
 	<body>
 		<h6>
@@ -41,12 +69,45 @@
 		
 		<!-- 表格 组合标签 -->
 		<!-- tr 行   td 列-->
-		<table>
+		<!-- 行合并 colspan="2" -->
+		<!-- 列合并 rowspan="2" -->
+		<!-- border 框线 -->
+		<table border="1px" width="500px">
 			<tr>
-				<td>
-					
-				</td>
+				<th >用户ID</th>
+				<th >用户密码</th>
+				<th >用户IP</th>
+			</tr>
+			<tr>
+				<td colspan="2">data1</td>
+				<td colspan="2">data2</td>
+				<td colspan="2">data3</td>
+			</tr>
+			<tr>
+				<td rowspan="2">data4</td>
+				<td rowspan="2">data5</td>
+				<td rowspan="2">data6</td>
+			</tr>
+			<tr>
+				<td >data7</td>
+				<td >data8</td>
+				<td >data9</td>
 			</tr>
 		</table>
+		
+		<div style="height: 500px;"></div>
+		
+		<!-- 无序列表 -->
+		<ul>
+			<li>热门</li>
+			<li>头条</li>
+			<li>视频</li>
+			<li>榜单</li>
+		</ul>
+		<ol>
+			<li>
+				dd
+			</li>
+		</ol>
 	</body>
 </html>
